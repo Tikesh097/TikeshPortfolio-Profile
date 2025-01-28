@@ -1,4 +1,3 @@
-// Main app initialization
 class PortfolioApp {
   constructor() {
       this.navToggle = document.querySelector(".nav-toggle");
@@ -224,4 +223,27 @@ if ("serviceWorker" in navigator) {
           console.error("ServiceWorker registration failed:", error);
       });
   });
+}
+
+
+// function viewAndDownload() {
+//     // View the resume in a new tab
+//     window.open('https://drive.google.com/file/d/138ZYWh0osv2SplUB9VTBadQ3lwB1KUMV/view', '_blank');
+
+//     // Download the resume
+//     var link = document.createElement('a');
+//     link.href = 'https://drive.google.com/uc?export=download&id=138ZYWh0osv2SplUB9VTBadQ3lwB1KUMV';
+//     link.download = 'Resume.pdf'; // You can specify the filename here
+//     link.click();
+// }
+
+function viewAndDownload() {
+    // View the resume in a new tab
+    window.open('https://drive.google.com/file/d/10TProueCNw7vW8leryYH9Y7KjkWsc1Lt/view?usp=sharing', '_blank');
+
+    // Download the resume
+    var link = document.createElement('a');
+    link.href = 'https://drive.google.com/uc?export=download&id=10TProueCNw7vW8leryYH9Y7KjkWsc1Lt';
+    link.download = 'Tikesh Aswale Profile.pdf'; // You can specify the filename here
+    link.click();
 }
